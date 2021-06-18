@@ -3,11 +3,11 @@ from twilio.rest import Client
 
 # open weather map details
 api_key = "9f6959f38e1944621c0d10d01720caa5"
-city = "suzhou"
+city = "Shanghai"
 parameters = {
     "appid": api_key,
-    "lat": 31.298973,
-    "lon": 120.585289,
+    "lat": 31.230391,
+    "lon": 121.473701,
     "exclude": "current,minutely,daily"
 }
 # twillo details
