@@ -6,9 +6,9 @@ parameters = {
     "appid": api_key,
     "q": city
 }
-weather_url = "api.openweathermap.org/data/2.5/weather"
+weather_url = "https://api.openweathermap.org/data/2.5/weather"
 
 response = requests.get(url=weather_url, params=parameters)
-
-
+data = response.json()
+print(data["weather"])
 
