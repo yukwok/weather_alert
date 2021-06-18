@@ -9,7 +9,6 @@ parameters = {
 weather_url = "api.openweathermap.org/data/2.5/weather"
 
 response = requests.get(url=weather_url, params=parameters)
-print(response)
 
 
 
