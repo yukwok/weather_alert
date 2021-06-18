@@ -1,5 +1,25 @@
+import os
+
 import requests
 from twilio.rest import Client
+
+# # open weather map details  ---- use for cloud server
+# api_key = os.environ.get("OWM_APIKEY")
+# city = "shanghai"
+# parameters = {
+#     "appid": api_key,
+#     "lat": 31.230391,
+#     "lon": 121.473701,
+#     "exclude": "current,minutely,daily"
+# }
+# # twillo details
+# account_sid = "ACfc1f66926937dff5407161913da6f046"
+# auth_token = os.environ.get("TWILLO_TOKEN")
+# os.environ.get()
+# #
+# # TWILLO_TOKEN = 4f8e654118b63c378612a438f110034c
+# #
+# # OWM_APIKEY = 9f6959f38e1944621c0d10d01720caa5
 
 # open weather map details
 api_key = "9f6959f38e1944621c0d10d01720caa5"
@@ -37,3 +57,10 @@ if will_rain:
         to="+85290986832"
     )
     print(message.status)
+
+    #
+    # os.environ.get()
+    # #
+    # # TWILLO_TOKEN = 4f8e654118b63c378612a438f110034c
+    # #
+    # # OWM_APIKEY = 9f6959f38e1944621c0d10d01720caa5
